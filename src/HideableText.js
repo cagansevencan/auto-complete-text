@@ -1,6 +1,6 @@
 import React from "react";
 
-export default class HideableText extends React.Component{
+export default class HideableText extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -16,11 +16,11 @@ export default class HideableText extends React.Component{
     }
 
     render() {
-        return(
-        <div>
-            <button onClick={() => this.toggleIsHidden()}>Toggle</button>
-            {!this.state.isHidden && this.props.text}
-        </div>
+        return (
+            <div>
+                <button onClick={() => this.toggleIsHidden()}>Toggle</button>
+                {!this.state.isHidden && this.props.text}
+            </div>
         );
     }
 }
