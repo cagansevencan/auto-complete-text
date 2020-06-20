@@ -28,6 +28,11 @@
 .App-Component {
   margin: 150px auto 0 auto;
   width: 600px;
+  margin-top: 20px;
+}
+
+.App-Margin{
+margin-top: 80px;
 }
 
 .App-link {
