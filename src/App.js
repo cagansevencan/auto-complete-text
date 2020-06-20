@@ -3,11 +3,15 @@ import logo from './logo.svg';
 import './App.css';
 import HideableText from "./HideableText";
 import AutoCompleteText from "./AutoComplete";
+import healthWords from "./healthWords";
 
 function App() {
   return (
     <div className="App">
-  <AutoCompleteText />
+      <div className={"App-Component"}>
+          <AutoCompleteText items={healthWords} />
+      </div>
+
     </div>
   );
 }
