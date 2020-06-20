@@ -4,6 +4,7 @@ import './App.css';
 import HideableText from "./HideableText";
 import AutoCompleteText from "./AutoComplete";
 import diseaseWords from "./diseaseWords";
+import drugWords from "./drug-dict"
 
 function App() {
     return (
@@ -19,7 +20,7 @@ function App() {
                 Search for drugs:
             </h2>
             <div className={"App-Component"}>
-                <AutoCompleteText items={diseaseWords}/>
+                <AutoCompleteText items={drugWords}/>
             </div>
         </div>
     );
