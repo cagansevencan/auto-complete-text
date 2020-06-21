@@ -11,6 +11,8 @@ export default class AutoCompleteText extends React.Component {
         }
     }
 
+
+
     onTextChanged = (e) => {
         const {items} = this.props;
         const value = e.target.value;

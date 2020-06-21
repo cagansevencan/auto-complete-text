@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import HideableText from "./HideableText";
@@ -7,6 +7,18 @@ import diseaseWords from "./diseaseWords";
 import drugWords from "./drug-dict"
 
 function App() {
+    useEffect(() => {
+        const words = [];
+        const promises = new Array(1000).fill()
+            .map((v, i) => fetch(`http://people.dbmi.columbia.edu/~friedma/Projects/DiseaseSymptomKB/index.html/${i + 1}`));
+        Promise.all(promises).then((healthArray) => {
+            return healthArray.map(res => res.json().then(({disease, symptom, sprites: {front_default: sprite}}) => {
+                return words.push({disease, symptom, sprite});
+            })
+            );
+
+        } );
+    }, []);
     return (
         <div className="App">
             <h1> Welcome to AutoComplete Wizardry!</h1>
