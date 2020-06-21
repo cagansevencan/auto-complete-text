@@ -7,6 +7,14 @@
     color: rgba(0,0,0,0.73);
 }
 
+.suggestion-active,
+.suggestions li:hover {
+    background-color: #008f68;
+    color: #fae042;
+    cursor: pointer;
+    font-weight: 700;
+}
+
 .AutoComplete input {
     width: 100%;
     border: none;
@@ -37,5 +45,7 @@
 
 .AutoComplete li:hover {
     text-decoration: underline;
-    background-color: rgba(128,128,128,0.20);
+    background-color: #008f68;
+    color: #fae042;
+    font-weight: 700;
 }

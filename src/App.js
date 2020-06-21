@@ -9,6 +9,7 @@ import drugWords from "./drug-dict"
 function App() {
     return (
         <div className="App">
+            <h1> Welcome to AutoComplete Wizardry!</h1>
             <h2 className={"App-Margin"}>
                 Search for diseases:
             </h2>

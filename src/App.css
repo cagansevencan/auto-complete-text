@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+body {
+  font-family: "Times New Roman";
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -26,9 +30,9 @@
 
 
 .App-Component {
-  margin: 150px auto 0 auto;
+  margin: 20px auto 0 auto;
   width: 600px;
-  margin-top: 20px;
+
 }
 
 .App-Margin{
