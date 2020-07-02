@@ -1,7 +1,5 @@
 import React, {useEffect} from 'react';
-import logo from './logo.svg';
 import './App.css';
-import HideableText from "./HideableText";
 import AutoCompleteText from "./AutoComplete";
 import diseaseWords from "./diseaseWords";
 import drugWords from "./drug-dict"
